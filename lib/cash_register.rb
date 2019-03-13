@@ -14,8 +14,10 @@ def add_item (item,price,quantity=1)
 end
 
 def apply_discount
-  @total = @total * (@discount/100)
-  puts "After the discount, the total comes to #{@total}."
+  if @discount > 0
+    @total = @total * (@discount/100)
+    puts "After the discount, the total comes to #{@total}."
+  end
 end
 
 end
