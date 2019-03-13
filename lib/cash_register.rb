@@ -13,7 +13,9 @@ end
 
 def add_item (item,price,quantity=1)
   @total += price * quantity
-  quantity.times @items << item
+  for (i=0,i<=quantity,i++) 
+    @items << item
+  end
 end
 
 def items
