@@ -13,6 +13,7 @@ end
 
 def add_item (item,price,quantity=1)
   @total += price * quantity
+  @last_transaction = price * quantity
   for i in 1..quantity
     @items << item
   end
@@ -32,7 +33,9 @@ def apply_discount
 end
 
 def void_last_transaction
-  @total = @total - @total.last
+  @total -= @last_transaction
+end
+
 end
 
 end
