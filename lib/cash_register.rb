@@ -18,7 +18,7 @@ def apply_discount
     @total = @total * (@discount)
     puts "After the discount, the total comes to #{@total}."
   else 
-    puts ""
+    puts "There is no discount to apply."
   end
 end
 
