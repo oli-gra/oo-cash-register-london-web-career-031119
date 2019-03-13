@@ -14,7 +14,6 @@ def add_item (item,price,quantity=1)
 end
 
 def apply_discount
-  binding.pry
   @total = @total * 0.@discount
   puts "After the discount, the total comes to #{@total}."
 end
