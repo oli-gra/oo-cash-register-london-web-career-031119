@@ -16,7 +16,9 @@ def add_item (item,price,quantity=1)
   @@items << item
 end
 
-
+def items
+  @@items
+end
 
 def apply_discount
   if @discount > 0
